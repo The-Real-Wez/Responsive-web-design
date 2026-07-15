@@ -168,7 +168,7 @@ span{
         gap:20px;
     }
 
-    nav-links{
+    .nav-links{
        flex-direction: column;
        text-align: center; 
     }
