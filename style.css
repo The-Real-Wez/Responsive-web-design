@@ -7,20 +7,18 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background: rgb(247, 228, 255);
+    background: rgb(255, 255, 255);
 }
 
 header{
     background-color: darkviolet;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 5px 0;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
     padding: 20px 8%;
     background: black;
 }
@@ -41,28 +39,42 @@ nav{
     color: white;
     text-decoration: none;
 }
+.nav-links a:hover{
+    font-weight: bold;
+    color: darkviolet;
+}
 nav button{
     padding: 10px 18px;
     border: none;
     background: darkviolet;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     cursor: pointer;
 }
 
 .hero{
+    background-color: rgb(248, 255, 247);
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     padding: 70px 8%;
     gap: 50px;
 }
 
+.hero h1{
+    color: darkviolet;
+}
+
 .hero-text{
+    background-color: rgb(255, 213, 255);
+    padding: 10px;
     flex: 1;
     border-radius: 10px;
     width: 400px;
-    height: 400px;
+    min-width: 400px;
+    min-height: 400px;
+    
 }
 
 .hero-text h1{
@@ -71,6 +83,8 @@ nav button{
 }
 
 .hero-text p{
+    display: flex;
+    justify-content: center;
     margin-bottom: 25px;
 }
 
@@ -84,10 +98,13 @@ nav button{
 }
 
 .hero-image{
+    background-color: rgb(255, 213, 255);
+    display: flex;
     flex: 1;
     border-radius: 10px;
     width: 400px;
-    height: 400px;
+    height: 100%;
+    justify-content: center;
 }
 
 .hero-image img{
@@ -123,6 +140,7 @@ nav button{
 .card button{
     padding: 10px 20px;
     border: none;
+    border-radius: 10px;
     background: darkviolet;
     color: white;
     cursor: pointer;
@@ -142,18 +160,14 @@ footer{
     color: white;
 }
 
-.social{
+.socials{
     display: flex;
     gap: 20px;
 }
 
 .socials a{
-    color: white;
-    text-decoration: none;
-}
-
-.socials a{
-    color: white;
+    font-size: 24px;
+    color: rgb(235, 169, 255);
     text-decoration: none;
 }
 span{
